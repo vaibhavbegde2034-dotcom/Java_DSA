@@ -12,8 +12,8 @@ public class Q14 {
 
     public static void main(String[] args)
     {
-        int[] arr={1,5,7,9,13,14,15,18,22,40};
-        int  target =20;
+        int[] arr={1,5,7,9,13,14,15};
+        int  target =10;
         System.out.println(biggerthan_smalest(arr,target));
         
     }
