@@ -36,7 +36,7 @@ public class Q17 {
     public static void  main(String [] args)
     {
         char [] letter ={'c','f','j'};
-        char Target = 'c';
+        char Target = 'd';
 
         System.out.println(search(letter,Target));
 
