@@ -3,12 +3,12 @@ public class Q27
 {
     public static void main(String[] args)
     {
-        int[] arr = {5,3,4,1,2};
+        int[] arr = {};
         cyclic_Sort(arr);
 
         System.out.println(Arrays.toString(arr));
     }
-    public static void cyclic_Sort(int[] arr)
+    public static int[] cyclic_Sort(int[] arr)
     {
         int i = 0;
         while(i<arr.length)
@@ -22,13 +22,13 @@ public class Q27
             else
                 i++ ;
         }
-        
+        return arr;
     }
-    public static void swap(int[] arr , int curentIndex , int correctIndex)
+    public static int[] swap(int[] arr , int curentIndex , int correctIndex)
     {
         int temp = arr[curentIndex];
         arr[curentIndex] = arr[correctIndex];
         arr[correctIndex]= temp;
-        
+        return arr;
     }
 }
