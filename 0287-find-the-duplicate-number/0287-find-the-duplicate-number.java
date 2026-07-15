@@ -1,0 +1,30 @@
+class Solution {
+    public int findDuplicate(int[] nums) {
+        int i = 0 ; 
+        while(i< nums.length)
+        {   int pos= nums[i]-1;
+
+            if(nums[pos]!= nums[i])
+            {
+                swap(nums,i, pos);
+            }
+            else
+                i++;
+        }
+        for(int j= 0 ; j<nums.length; j++)
+        {
+            if(nums[j]!=j+1)
+            {
+                return nums[j];
+            }
+        }
+        return nums[nums.length-1];
+        
+    }
+    public void swap(int[] nums , int i , int pos)
+    {
+        int temp = nums[i];
+        nums[i]= nums[pos];
+        nums[pos]= temp;
+    }
+}
